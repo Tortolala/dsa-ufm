@@ -16,6 +16,6 @@ Código base para el curso Estructuras de Datos y Algoritmos en Universidad Fran
 
 1. Leer la sección _8.4.1_ del libro *Data Structures using C*. 
 2. Crear un subdirectorio `03/queues/circular_queue` y dentro de este crear dos nuevos archivos: 
-    * `circular_queue.py`: en el cual deberán crear la clase *CircularQueue*.
-    * `test.py`: en este archivo importar el la clase *CircularQueue* y testear como se considere necesario. 
-3. Implementar la clase *CircularQueue* con base al pseudocódigo del libro. En estos pseudocódigos existe un bug, deben indentificarlo y arreglarlo en su solución.
+    * `circular_queue.py`: en el cual deberá crear la clase *CircularQueue*.
+    * `test.py`: en este archivo importar  la clase *CircularQueue* y testear como considere necesario. 
+3. Implementar la clase *CircularQueue* con base al pseudocódigo del libro. En estos pseudocódigos existe un bug, debe indentificarlo y arreglarlo en su solución.
