@@ -9,52 +9,34 @@ Código base para el curso Estructuras de Datos y Algoritmos en Universidad Fran
 * [Profiling](https://github.com/Tortolala/dsa-ufm/tree/master/04_profiling)
 * [Linked Lists](https://github.com/Tortolala/dsa-ufm/tree/master/05_linked_list)
 
-## Actividad - Simulacro de Parcial
+## Actividad no. 10: Algoritmos de Búsqueda
 
-**Entrega:** 18 de marzo, 11:30am.
+**Entrega:** 29 de abril, 11:30am.
 
 **Instrucciones:** 
 
-1. **Entregable:** crear un repositorio nuevo con el nombre `dsa_pre_midterm`. Este repositorio y los commits realizados entre 10 y 11:20am serán su entregable final. 
+1. En parejas (asignadas), trabajar un repositorio colaborativamente. Se les será asignado un rol de `dev_1` y `dev_2` a considerar en las instrucciones. Deberán trabajar utilizando branches de forma ordenada.
 
-2. **Clases base:** utilizando este repositorio como base, crear una nueva versión de la clase *LinkedList* que cumpla con lo siguiente:
-    - Estar en un archivo únicamente de definición (clase *Node* y *LinkedList*)
-    - Estilo consistente con la base de código del curso
-    - Cumplimiento de formato con PEP8
-    - No deben existir docstrings en esta clase (por el momento)
-    - Utilizar type hinting
-    - El código debe verse depurado, no como *AI slop*.
-    - No deben manejar aún excepciones
+2. **Repositorio [`dev_1`]:** crear un repositorio público con el nombre `search_algorithms`, agregar a `dev_2` al proyecto. Este repositorio y los commits realizados entre 10 y 11:20am serán su entregable final. 
 
-    Al finalizar estos cambios y tener una clase *LinkedList* acorde a lo específicado, committear.
+3. **Unit testing [`dev_1`]:** realizar por separado un unit test para los algoritmos:
+    - Búsqueda lineal
+    - Búsqueda binaria
 
-3. **Mejoras a clases:** agregar las siguientes mejoras a las clases *LinkedList* y *Node*:
-    - Convertir la LL en una lista doblemente encadenada.
-    - Agregar a la clase *Node* un diccionario que contenga los siguientes atributos:
-        - Nombre de canción
-        - Artista
-        - Álbum
-    
-    Committear sus cambios.
+    Cada test unitario debe considerar como mínimo 5 escenarios. Committear, en este commit solo deben existir los unit tests, no los algoritmos implementados.
 
-4. **Data:** las clases trabajadas hasta el momento, se utilizarán para implementar una playlist de música. Para esto, crear un archivo exclusivamente para el demo de la playlist. 
+4. **Unit testing [`dev_2`]:** implementar los algoritmos:
+    - Búsqueda lineal
+    - Búsqueda binaria
 
-    Llenar de datos dicha playlist, por lo cual implica diseñar un mecanismo que permita obtener la información de 50 canciones de su elección y agregarlas a la lista linkeada.
+    Ambas implementaciones deben encontrarse en un módulo llamado `searching.py`. Committear.
 
-    Committear progreso.
+5. **Unit testing [`dev_1` y `dev_2`]:** en modalidad *pair programming*, realizar benchmarking de ambos algoritmos utilizando pytest. Deberán evaluar un escenario en el cual recorren una lista de 100K elementos y el target no es encontrado. Utilizar el modo `pedantic` configurando por lo menos 5 rounds de 5 iteraciones cada uno.
 
-5. **Interfaz:** implementar una interfaz en consola, la cual debe permitir iniciar la playlist de 50 canciones, cumpliendo con lo siguiente:
-    - Iniciar con la primera canción y "reproducirla"
-    - Avanzar a la siguiente canción
-    - Regresar a la canción anterior
-    - El inicio y el final de la playlist deben ser límites, la lista linkeada no debe ser circular
-    
-    El diseño de la interfaz y sus controles queda a su criterio. Debe ser una interfaz en consola, no con un motor gráfico. 
 
-    Committear la implementación de la playlist. 
+6. **Documentación [`dev_1` y `dev_2`]:** en modalidad *pair programming*, documentar en el README del repositorio los necesario para:
+    - Clonar el repositorio
+    - Ejecutar el unit testing de cada algoritmo
+    - Ejecutar el benchmarking
 
-6. **Documentación:** documentar en el README del repositorio los necesario para:
-    - Clonar y correr existosamente su programa
-    - Navegar la playlist según los controles definidos
-
-    Committear update del README.
+   Adjuntar al final una sección de *Anexos* que muestre capturas de pantalla del resultado de ambos unit tests y el benchmark. 
