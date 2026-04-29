@@ -25,13 +25,13 @@ Código base para el curso Estructuras de Datos y Algoritmos en Universidad Fran
 
     Cada test unitario debe considerar como mínimo 5 escenarios. Committear, en este commit solo deben existir los unit tests, no los algoritmos implementados.
 
-4. **Unit testing [`dev_2`]:** implementar los algoritmos:
+4. **Algoritmos [`dev_2`]:** implementar los algoritmos:
     - Búsqueda lineal
     - Búsqueda binaria
 
     Ambas implementaciones deben encontrarse en un módulo llamado `searching.py`. Committear.
 
-5. **Unit testing [`dev_1` y `dev_2`]:** en modalidad *pair programming*, realizar benchmarking de ambos algoritmos utilizando pytest. Deberán evaluar un escenario en el cual recorren una lista de 100K elementos y el target no es encontrado. Utilizar el modo `pedantic` configurando por lo menos 5 rounds de 5 iteraciones cada uno.
+5. **Benchmarking [`dev_1` y `dev_2`]:** en modalidad *pair programming*, realizar benchmarking de ambos algoritmos utilizando pytest. Deberán evaluar un escenario en el cual recorren una lista de 100K elementos y el target no es encontrado. Utilizar el modo `pedantic` configurando por lo menos 5 rounds de 5 iteraciones cada uno.
 
 
 6. **Documentación [`dev_1` y `dev_2`]:** en modalidad *pair programming*, documentar en el README del repositorio los necesario para:
